@@ -33,6 +33,8 @@ window.addEventListener('load', () => {
     background: 'white',
     color: 'black',
     fontSize: '24px',
+    border: '10px solid red',
+    boxShadow: '5px 5px',
     zIndex: 999999,
   };
   Object.keys( style ).forEach( prop => {
@@ -75,10 +77,11 @@ window.addEventListener('load', () => {
     } else {
       const tril = money / 100;
       const scumbags = people.toString().replace( /\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',' );
+      const area = ! onlyUS ? 'world' : 'U.S.';
       notice.innerHTML = `
-        ${ scumbags } people in the U.S. own ${ tril.toFixed(2) } trillion
+        ${ scumbags } scumbags in the ${ area } own ${ tril.toFixed(2) } trillion
         <br>
-        the rest of the world owns ${ ( worldWealth - tril).toFixed(2) }
+        the rest of the world owns ${ ( worldWealth - tril).toFixed(2) } trillion
       `;
     }
     counter++;
