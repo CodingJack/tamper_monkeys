@@ -2,7 +2,7 @@
 // @name         billionaires
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  counts the billionaire scumbags total world wealth
+// @description  counts the billionaire total world wealth
 // @author       CodingJack
 // @match        https://www.forbes.com/billionaires/
 // @icon         https://www.google.com/s2/favicons?domain=forbes.com
