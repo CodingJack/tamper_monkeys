@@ -10,11 +10,8 @@
 // ==/UserScript==
 
 /*
- * rich people are scum.
+ * billionaires are ridiculous, as you'll see by the numbers.
  * run this TamperMonkey script on forbes.com to see how much of the world's money they actually have
- * we should shame them constantly, and treat them like the scum of the earth that they are
- * they should live in a world where only money can buy their friendship
- * the rest of us have a duty to spit in their faces every chance we get
  */
 window.addEventListener('load', () => {
   const worldWealth = 256; // trillions as of 2016, https://www.mvorganizing.org/what-would-happen-if-wealth-was-evenly-distributed/
