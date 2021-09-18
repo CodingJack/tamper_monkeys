@@ -73,12 +73,12 @@ window.addEventListener('load', () => {
       btns[ counter ].click();
     } else {
       const tril = money / 100;
-      const scumbags = people.toString().replace( /\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',' );
+      const humans = people.toString().replace( /\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',' );
       const area = ! onlyUS ? 'world' : 'U.S.';
       notice.innerHTML = `
-        ${ scumbags } scumbags in the ${ area } own ${ tril.toFixed(2) } trillion
+        ${ humans } people in the ${ area } own ${ tril.toFixed(2) } trillion
         <br>
-        the rest of the world owns ${ ( worldWealth - tril).toFixed(2) } trillion
+        the rest of the world owns approx ${ ( worldWealth - tril).toFixed(2) } trillion
       `;
     }
     counter++;
